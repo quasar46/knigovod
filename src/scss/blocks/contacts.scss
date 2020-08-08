@@ -1,0 +1,157 @@
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 100px;
+	ul {
+		margin-right: 20px;
+		.title {
+			font-family: $font-add;
+			font-weight: 400;
+			font-size: 41px;
+			color: $color-blue;
+			margin-bottom: 45px;
+			@media (max-width: 768px) {
+				font-size: 20px;
+				margin-bottom: 20px;
+			}
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+	}
+	.phones {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 45px;
+		a {
+			font-size: 25px;
+			font-weight: 700;
+			text-decoration: none;
+			white-space: nowrap;
+			color: $color-text;
+			@media (max-width: 768px) {
+				font-size: 18px;
+			}
+		}
+		@media (max-width: 768px) {
+			margin-bottom: 20px;
+		}
+	}
+	.phones__mode {
+		font-size: 20px;
+		font-weight: 500;
+		display: flex;
+		flex-direction: column;
+		@media (max-width: 768px) {
+			font-size: 13px;
+		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
+		margin-bottom: 45px;
+	}
+}
+
+.contacts__form {
+	background-color: $color-light;
+	border-radius: 40px;
+	padding: 40px 65px;
+	flex: 0 1 740px;
+	.title {
+		font-size: 25px;
+		font-weight: 500;
+		margin-bottom: 30px;
+		text-align: center;
+		color: $color-text;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	.inputs {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+
+		input {
+			border: none;
+			line-height: 50px;
+			flex: 0 1 265px;
+			max-width: 265px;
+			font-size: 18px;
+			font-weight: 500;
+			padding: 0 10px;
+			&:first-child {
+				margin-right: 20px;
+				@media (max-width: 768px) {
+					margin-right: 0;
+				}
+			}
+			@media (max-width: 768px) {
+				flex: auto;
+				margin-bottom: 20px;
+				font-size: 13px;
+				line-height: 35px;
+			}
+		}
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: 20px;
+		}
+	}
+	.bottom {
+		display: flex;
+		justify-content: space-between;
+		.politics {
+			font-size: 15px;
+			font-weight: 500;
+			i.br {
+				display: block;
+				@media (max-width: 768px) {
+					display: none;
+				}
+			}
+			a {
+				text-decoration: underline;
+				color: $color-text;
+			}
+			@media (max-width: 768px) {
+				margin-bottom: 25px;
+				font-size: 12px;
+			}
+		}
+		button,
+		input.btn {
+			font-size: 20px;
+			font-weight: 500;
+			color: #0f2470;
+			background-color: #d6a47c;
+			border-radius: 20px;
+			border: 0;
+			padding: 10px 20px;
+			&:hover {
+				background-color: $color-blue;
+				color: $color-white;
+				transition: 0.3s;
+			}
+			@media (max-width: 768px) {
+				font-size: 13px;
+				padding: 8px 10px;
+				align-self: center;
+			}
+		}
+		@media (max-width: 768px) {
+			flex-direction: column;
+		}
+	}
+	@media (max-width: 920px) {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	@media (max-width: 768px) {
+		padding: 30px 25px;
+		padding-top: 40px;
+		flex: auto;
+	}
+}

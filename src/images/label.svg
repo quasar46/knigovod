@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1184 1184" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g transform="matrix(1,0,0,1,-9777.31,-1762.86)">
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(0,-1,-1,0,1244.29,214.471)">
+                <path d="M-68.086,-68.086C-105.689,-68.086 -136.171,-37.603 -136.171,-0.001C-136.171,37.602 -105.689,68.086 -68.086,68.086C-30.482,68.086 -0.001,37.602 -0.001,-0.001C-0.001,-37.603 -30.482,-68.086 -68.086,-68.086" style="fill:rgb(15,36,112);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <g transform="matrix(0,-1,-1,0,1244.29,226.619)">
+                <ellipse cx="-55.937" cy="0" rx="55.938" ry="55.937" style="fill:none;stroke:rgb(255,233,201);stroke-width:3px;"/>
+            </g>
+        </g>
+        <g transform="matrix(8.33333,0,0,8.33333,0,0)">
+            <text x="1216.83px" y="275.466px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.138px;fill:rgb(255,233,201);">С<tspan x="1235.66px 1254.39px " y="275.466px 275.466px ">Пб</tspan></text>
+            <text x="1211.96px" y="306.064px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.138px;fill:rgb(255,233,201);">и</text>
+            <text x="1235.91px" y="306.064px" style="font-family:'ArialMT', 'Arial', sans-serif;font-size:29.138px;fill:rgb(255,233,201);">Л<tspan x="1255.42px " y="306.064px ">О</tspan></text>
+        </g>
+    </g>
+</svg>

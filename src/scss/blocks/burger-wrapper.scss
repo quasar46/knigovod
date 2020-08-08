@@ -1,0 +1,26 @@
+.burger-wrapper {
+	display: none;
+	flex: 1 0 65px;
+	max-width: 65px;
+	.phone {
+		flex: 1 0 19px;
+		max-width: 19px;
+		margin-right: 15px;
+	}
+	.burger {
+		height: 20px;
+		flex: 1 0 30px;
+		max-width: 30px;
+		background-image: url("../images/icons/burger.svg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		&.active {
+			background-image: url("../images/icons/cross.svg");
+			background-size: 19px 19px;
+		}
+	}
+	@media (max-width: 768px) {
+		display: flex;
+	}
+}

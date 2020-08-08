@@ -1,0 +1,121 @@
+.subjects {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	background-image: url("../images/big-book2.jpg");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-size: 410px auto;
+	h2 {
+		font-family: $font-add;
+		font-weight: 400;
+		font-size: 45px;
+		color: $color-blue;
+		font-weight: 400;
+		flex: 0 1 440px;
+		padding-left: 60px;
+		i.br {
+			display: block;
+		}
+		@media (max-width: 1023px) {
+			font-size: 20px;
+			flex: auto;
+			padding: 40px 0;
+		}
+	}
+	ul {
+		display: flex;
+		flex-direction: column;
+		flex: 1 0 265px;
+		max-width: 265px;
+		li {
+			background-color: #fff;
+			font-size: 21px;
+			font-weight: 700;
+			border: 8px solid $color-light;
+			border-radius: 25px;
+			margin-bottom: 30px;
+			height: 60px;
+			line-height: 1;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			text-align: center;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			@media (max-width: 768px) {
+				font-size: 12px;
+				border-width: 4px;
+				height: 40px;
+			}
+		}
+		@media (max-width: 768px) {
+			flex: 1 0 117px;
+			max-width: 117px;
+		}
+	}
+	@media (max-width: 1023px) {
+		flex-direction: column;
+		background-size: contain;
+		background-position: right 25px;
+		margin-bottom: 40px;
+	}
+	@media (max-width: 768px) {
+		background-size: 95px auto;
+	}
+}
+
+.subjects__lists {
+	display: flex;
+	justify-content: space-between;
+	flex: 1 0 600px;
+	max-width: 600px;
+	ul {
+		max-width: 265px;
+		flex: 1 0 265px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		li {
+			width: 100%;
+			@media (max-width: 768px) {
+				width: calc(100% / 4 - 20px);
+			}
+			@media (max-width: 500px) {
+				width: 100%;
+				padding: 0 10px;
+			}
+		}
+		&:first-child {
+			// margin-right: 70px;
+			@media (max-width: 768px) {
+				margin-right: 0;
+			}
+		}
+		@media (max-width: 768px) {
+			flex-direction: row;
+			width: 100%;
+			max-width: 100%;
+			// flex: 1 0 auto;
+			flex: auto;
+			flex-wrap: wrap;
+		}
+		@media (max-width: 500px) {
+			flex-direction: column;
+			flex: 1 0 120px;
+			max-width: 120px;
+		}
+	}
+	@media (max-width: 768px) {
+		flex: auto;
+		flex-direction: column;
+		max-width: 100%;
+	}
+	@media (max-width: 500px) {
+		flex-direction: row;
+	}
+}

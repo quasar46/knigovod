@@ -1,0 +1,46 @@
+.mobile-menu {
+	display: none;
+	&.active {
+		display: flex;
+	}
+	flex-direction: column;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 30px 20px;
+	box-shadow: 0 10px 10px #ccc;
+	.links {
+		margin-bottom: 20px;
+		li {
+			margin-bottom: 10px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		a {
+			font-size: 15px;
+			font-weight: 500;
+			color: $color-text;
+			text-decoration: none;
+		}
+	}
+	.phones {
+		display: flex;
+		flex-direction: column;
+		li {
+			margin-bottom: 10px;
+		}
+		a {
+			font-size: 17px;
+			font-weight: 900;
+			color: $color-blue;
+			text-decoration: none;
+		}
+	}
+	p {
+		color: $color-light;
+		font-size: 12px;
+	}
+}

@@ -1,0 +1,66 @@
+.main-header > .container {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px auto;
+	.logo {
+		flex: 0 1 320px;
+		// max-width: 320px;
+		display: flex;
+		align-items: center;
+		margin-right: 20px;
+		@media (max-width: 768px) {
+			flex: 0 1 168px;
+			// max-width: 168px;
+		}
+	}
+	nav {
+		flex: 1 0 auto;
+		align-self: center;
+		ul {
+			display: flex;
+			justify-content: center;
+			li {
+				margin-right: 60px;
+				&:last-child {
+					margin-right: 0;
+				}
+				a {
+					text-decoration: none;
+					color: $color-text;
+					font-size: 18px;
+					font-weight: 500;
+					&:hover {
+						color: $color-light-orange;
+						transition: 0.3s;
+					}
+				}
+			}
+		}
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	.phones {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-left: 10px;
+		a {
+			font-size: 22px;
+			color: $color-blue;
+			text-decoration: none;
+			font-weight: 900;
+			white-space: nowrap;
+		}
+		p {
+			color: $color-light-orange;
+			text-align: right;
+		}
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	@media (max-width: 768px) {
+		margin: 30px 0;
+	}
+}

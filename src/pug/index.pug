@@ -1,0 +1,115 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		.content
+			include modules/header.pug
+
+			main
+				
+				.container
+					.hero
+						//- loader
+						.page-loader
+							.page-loader-indicator.loader
+						h1 Купим любые книги<i class="br"></i> в хорошем <i class="br2"></i> состоянии
+						.hero__content
+							ul
+								li Тематика
+								li Жанры
+								li Года
+								li Издания
+							ul
+								li Не имеют
+								li значения
+						button.btn-order Оставить заявку
+						//- .label
+						//- 	img(src="images/label.svg", alt="")
+					.description#description
+						ul
+							li.aos-init.aos-animate(data-aos="fade-right" data-aos-delay="0")
+								.circle
+									img(src="images/description/item1.svg", alt="")
+								p Оценка происходит с выездом букиниста по месту нахождения книги
+							li.aos-init.aos-animate(data-aos="fade-right"  data-aos-delay="200")
+								.circle
+									img(src="images/description/item2.svg", alt="")
+								p Выезд осуществляется во все районы Санкт-Петербурга и в его пригороды
+							li.aos-init.aos-animate(data-aos="fade-right"  data-aos-delay="400")
+								.circle
+									img(src="images/description/item3.svg", alt="")
+								p Наличная оплата по факту оценки
+							li.aos-init.aos-animate(data-aos="fade-right"  data-aos-delay="600")
+								.circle
+									img(src="images/description/item4.svg", alt="")
+								p Осуществляем упаковку и вынос книг после полного расчёта
+					.subjects#subjects
+						h2 Тематики книг, <i class="br"></i> которые мы <i class="br"></i> покупаем
+						.subjects__lists
+							ul
+								li(data-aos="fade-up") Фантастика
+								li(data-aos="fade-up") Любовные романы
+								li(data-aos="fade-up") Философия
+								li(data-aos="fade-up") Изотерика
+								li(data-aos="fade-up") Детская литература
+								li(data-aos="fade-up") 
+									span Современная 
+									span литература
+								li(data-aos="fade-up") Энциклопедии
+								li(data-aos="fade-up") Бизнес-литература
+							ul
+								li(data-aos="fade-up") Детективы
+								li(data-aos="fade-up") 
+									span Классическая 
+									span литература
+								li(data-aos="fade-up") Психология
+								li(data-aos="fade-up") Научная литература
+								li(data-aos="fade-up") Учебная литература
+								li(data-aos="fade-up") Беллетристика
+								li(data-aos="fade-up") Книги по искусству
+								li(data-aos="fade-up") Антикварные книги
+
+					//- contacts
+					.contacts#contacts
+						ul
+							li.title Контакты
+							li
+								.phones
+									a(href="tel:9193381") 919 33 81
+									a(href="tel:+79218769979") +7 921 876 99 79
+								.phones__mode
+									span Звоните ежедневно
+									span с 9:00 до 21:00
+						.contacts__form
+							.title Оставьте заявку и мы свяжемся с вами в ближайшее время
+							form(action="get")
+								.inputs
+									input(type="text" placeholder="Ваше имя*" required)
+									input(type="text" placeholder="Ваш телефон*" required)
+								.bottom
+									p.politics Оставляя заявку, я соглашаюсь <i class="br"></i> с условиями <a href="politic.pdf" target="_blank">политики конфиденциальности</a>
+									input.btn(type="submit" value="Оставить заявку")
+					//- mobile menu
+					.mobile-menu
+						ul.links
+							li
+								a(href="#description") Как мы работаем
+							li
+								a(href="#subjects") Тематики книг
+							li
+								a(href="#contacts") Контакты
+						ul.phones
+							li
+								a(href="tel:9193381") 919 33 81
+							li
+								a(href="tel:+79218769979") +7 921 876 99 79
+						p с 9:00 до 21:00 ежедневно
+
+
+			include modules/popup.pug
+			include modules/popup2.pug
+
+		include modules/footer.pug
+		//- include modules/menu-mobile.pug
+		include modules/script.pug
